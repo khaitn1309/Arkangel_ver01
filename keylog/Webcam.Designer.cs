@@ -51,7 +51,12 @@
             // metroTabControl1
             // 
             this.metroTabControl1.Controls.Add(this.metroTabPage1);
+<<<<<<< HEAD
             this.metroTabControl1.Location = new System.Drawing.Point(3, 3);
+=======
+            this.metroTabControl1.Location = new System.Drawing.Point(4, 4);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
             this.metroTabControl1.Size = new System.Drawing.Size(724, 350);
@@ -67,6 +72,10 @@
             this.metroTabPage1.HorizontalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.HorizontalScrollbarSize = 10;
             this.metroTabPage1.Location = new System.Drawing.Point(4, 38);
+<<<<<<< HEAD
+=======
+            this.metroTabPage1.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.metroTabPage1.Name = "metroTabPage1";
             this.metroTabPage1.Size = new System.Drawing.Size(716, 308);
             this.metroTabPage1.TabIndex = 0;
@@ -82,25 +91,44 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.devicesCombo);
             this.groupBox2.Controls.Add(this.videoSourcePlayer);
+<<<<<<< HEAD
             this.groupBox2.Location = new System.Drawing.Point(0, 97);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(709, 208);
+=======
+            this.groupBox2.Location = new System.Drawing.Point(0, 119);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(945, 256);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Setting";
             // 
             // pictureBox1
             // 
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(375, 24);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(307, 169);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(500, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(409, 205);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // bt_test
             // 
+<<<<<<< HEAD
             this.bt_test.Location = new System.Drawing.Point(238, 116);
+=======
+            this.bt_test.Location = new System.Drawing.Point(317, 143);
+            this.bt_test.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.bt_test.Name = "bt_test";
             this.bt_test.Size = new System.Drawing.Size(106, 40);
             this.bt_test.TabIndex = 3;
@@ -122,14 +150,25 @@
             this.devicesCombo.FormattingEnabled = true;
             this.devicesCombo.Items.AddRange(new object[] {
             ""});
+<<<<<<< HEAD
             this.devicesCombo.Location = new System.Drawing.Point(112, 68);
+=======
+            this.devicesCombo.Location = new System.Drawing.Point(149, 84);
+            this.devicesCombo.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.devicesCombo.Name = "devicesCombo";
             this.devicesCombo.Size = new System.Drawing.Size(232, 27);
             this.devicesCombo.TabIndex = 1;
+            this.devicesCombo.Visible = false;
             // 
             // videoSourcePlayer
             // 
+<<<<<<< HEAD
             this.videoSourcePlayer.Location = new System.Drawing.Point(375, 25);
+=======
+            this.videoSourcePlayer.Location = new System.Drawing.Point(500, 31);
+            this.videoSourcePlayer.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.videoSourcePlayer.Name = "videoSourcePlayer";
             this.videoSourcePlayer.Size = new System.Drawing.Size(307, 167);
             this.videoSourcePlayer.TabIndex = 0;
@@ -141,9 +180,17 @@
             this.groupBox1.Controls.Add(this.tb_minutes);
             this.groupBox1.Controls.Add(this.tb_hours);
             this.groupBox1.Controls.Add(this.cb_enable);
+<<<<<<< HEAD
             this.groupBox1.Location = new System.Drawing.Point(3, 14);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(710, 77);
+=======
+            this.groupBox1.Location = new System.Drawing.Point(4, 17);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(947, 95);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Enable/Disable";
@@ -152,7 +199,12 @@
             // 
             this.tb_minutes.Depth = 0;
             this.tb_minutes.Hint = "";
+<<<<<<< HEAD
             this.tb_minutes.Location = new System.Drawing.Point(476, 34);
+=======
+            this.tb_minutes.Location = new System.Drawing.Point(635, 42);
+            this.tb_minutes.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.tb_minutes.MouseState = MaterialSkin.MouseState.HOVER;
             this.tb_minutes.Name = "tb_minutes";
             this.tb_minutes.PasswordChar = '\0';
@@ -168,7 +220,12 @@
             // 
             this.tb_hours.Depth = 0;
             this.tb_hours.Hint = "";
+<<<<<<< HEAD
             this.tb_hours.Location = new System.Drawing.Point(394, 34);
+=======
+            this.tb_hours.Location = new System.Drawing.Point(525, 42);
+            this.tb_hours.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.tb_hours.MouseState = MaterialSkin.MouseState.HOVER;
             this.tb_hours.Name = "tb_hours";
             this.tb_hours.PasswordChar = '\0';
@@ -204,7 +261,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMR_OK.Depth = 0;
+<<<<<<< HEAD
             this.btnMR_OK.Location = new System.Drawing.Point(586, 368);
+=======
+            this.btnMR_OK.Location = new System.Drawing.Point(781, 453);
+            this.btnMR_OK.Margin = new System.Windows.Forms.Padding(4);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.btnMR_OK.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnMR_OK.Name = "btnMR_OK";
             this.btnMR_OK.Primary = true;
@@ -220,8 +282,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnMR_OK);
             this.Controls.Add(this.metroTabControl1);
+<<<<<<< HEAD
             this.Name = "Webcam";
             this.Size = new System.Drawing.Size(730, 424);
+=======
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "Webcam";
+            this.Size = new System.Drawing.Size(973, 522);
+            this.Load += new System.EventHandler(this.Webcam_Load);
+>>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
             this.metroTabControl1.ResumeLayout(false);
             this.metroTabPage1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

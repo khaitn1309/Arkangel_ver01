@@ -1033,6 +1033,8 @@ namespace tt
         ///
         public static bool IsTarget(string winTitle,List<string> targetList)
         {
+            if (targetList.Count == 0)
+                return false;
             foreach (var s in targetList)
             {
                 if (winTitle.ToLower().Contains(s) == true)
