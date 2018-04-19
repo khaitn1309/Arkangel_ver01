@@ -19,6 +19,7 @@ namespace keylog
 
         private void btn_user_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qUser();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("User"))
             {
                 User general = new User();
@@ -31,6 +32,7 @@ namespace keylog
 
         private void btn_alert_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qAlert();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Alert"))
             {
                 Alert general = new Alert();
@@ -43,6 +45,7 @@ namespace keylog
 
         private void btn_screenshot_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qScreenshot();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Screenshot"))
             {
                 Screenshot general = new Screenshot();
@@ -55,6 +58,7 @@ namespace keylog
 
         private void btn_general_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qGeneral();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("General"))
             {
                 General general = new General();
@@ -63,10 +67,12 @@ namespace keylog
             }
             mainForm.Instince.Metrocontainer.Controls["General"].BringToFront();
             mainForm.Instince.Metroback.Visible = true;
+            
         }
 
         private void btn_ftp_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qFTP();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("FTP"))
             {
                 FTP general = new FTP();
@@ -75,10 +81,12 @@ namespace keylog
             }
             mainForm.Instince.Metrocontainer.Controls["FTP"].BringToFront();
             mainForm.Instince.Metroback.Visible = true;
+            
         }
 
         private void btn_email_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qEmail();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Email"))
             {
                 Email general = new Email();
@@ -87,10 +95,12 @@ namespace keylog
             }
             mainForm.Instince.Metrocontainer.Controls["Email"].BringToFront();
             mainForm.Instince.Metroback.Visible = true;
+            
         }
 
         private void btn_target_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qTarget();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Target"))
             {
                 mainForm.Instince.Metrocontainer.Controls.RemoveAt(0);
@@ -100,11 +110,13 @@ namespace keylog
             }
             mainForm.Instince.Metrocontainer.Controls["Target"].BringToFront();
             mainForm.Instince.Metroback.Visible = true;
+            
 
         }
 
         private void btn_clipboard_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qClipboard();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("_Clipboard"))
             {
                 _Clipboard general = new _Clipboard();
@@ -113,10 +125,12 @@ namespace keylog
             }
             mainForm.Instince.Metrocontainer.Controls["_Clipboard"].BringToFront();
             mainForm.Instince.Metroback.Visible = true;
+           
         }
 
         private void btn_webcam_Click(object sender, EventArgs e)
         {
+            mainForm.Instince.qWebcam();
             if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Webcam"))
             {
                 Webcam general = new Webcam();
@@ -125,6 +139,7 @@ namespace keylog
             }
             mainForm.Instince.Metrocontainer.Controls["Webcam"].BringToFront();
             mainForm.Instince.Metroback.Visible = true;
+            
         }
     }
 }

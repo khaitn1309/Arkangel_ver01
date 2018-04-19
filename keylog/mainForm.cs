@@ -13,6 +13,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using QrWebCam;
 using AForge.Video.DirectShow;
+using System.Windows.Media;
 namespace keylog
 {
     
@@ -360,15 +361,27 @@ namespace keylog
 
         private void btn_home_Click(object sender, EventArgs e)
         {
+
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
+
+
             mainpanel.Controls["Dashboard"].BringToFront();
             btn_home.Visible = false;
             // Load form main again to load config file
-<<<<<<< HEAD
+            //Color color = 0xFFDFD991.ToColor();
             mainForm_Load(sender, e);
-           // this.Refresh();
-=======
-           // mainForm_Load(sender, e);
->>>>>>> 9a87139dc81a302a9678c3ad44885e6f72a85248
+            // this.Refresh();
+            // Color color = (Color)ColorConverter.ConvertFromString("#FFDFD991");
+            // mainForm_Load(sender, e);
         }
         ToolTip tool; 
         private void btn_home_MouseHover(object sender, EventArgs e)
@@ -379,9 +392,176 @@ namespace keylog
         private void bunifuFlatButton12_MouseHover(object sender, EventArgs e)
         {
             tool = new ToolTip();
-            tool.SetToolTip(this.bunifuFlatButton12, "Alert");
+            tool.SetToolTip(this.bt_qAlert, "Alert");
+        }
+        //Colour
+        public void qGeneral()
+        {
+            bt_qGeneral.Normalcolor = Color.Gray;
+        }
+        public void qClipboard()
+        {
+            bt_qClipboard.Normalcolor = Color.Gray;
+        }
+        public void qFTP()
+        {
+            bt_qFTP.Normalcolor = Color.Gray;
+        }
+        public void qWebcam()
+        {
+            bt_qWebcam.Normalcolor = Color.Gray;
+        }
+        public void qAlert()
+        {
+            bt_qAlert.Normalcolor = Color.Gray;
+        }
+        public void qUser()
+        {
+            bt_qUser.Normalcolor = Color.Gray;
+        }
+        public void qEmail()
+        {
+            bt_Email.Normalcolor = Color.Gray;
+        }
+        public void qScreenshot()
+        {
+            bt_qScreenshot.Normalcolor = Color.Gray;
+        }
+        public void qTarget()
+        {
+            bt_qTarget.Normalcolor = Color.Gray;
+        }
+
+        private void bt_qGeneral_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qGeneral();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("General"))
+            {
+                General general = new General();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["General"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+        }
+
+        private void bt_qClipboard_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qClipboard();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("_Clipboard"))
+            {
+                _Clipboard general = new _Clipboard();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["_Clipboard"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+
+        }
+
+        private void bt_qFTP_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qFTP();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("FTP"))
+            {
+                FTP general = new FTP();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["FTP"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+        }
+
+        private void bt_qWebcam_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qWebcam();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Webcam"))
+            {
+                Webcam general = new Webcam();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["Webcam"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+        }
+
+        private void bt_qFacebook_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_qTarget_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qTarget();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Target"))
+            {
+                mainForm.Instince.Metrocontainer.Controls.RemoveAt(0);
+                Target general = new Target();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["Target"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+
+        }
+
+        private void bt_qUser_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qUser();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("User"))
+            {
+                User general = new User();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["User"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+        }
+
+        private void bunifuFlatButton9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_qScreenshot_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qScreenshot();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Screenshot"))
+            {
+                Screenshot general = new Screenshot();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["Screenshot"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+        }
+
+        private void bt_Email_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qEmail();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Email"))
+            {
+                Email general = new Email();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["Email"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
+        }
+
+        private void bt_qAlert_Click(object sender, EventArgs e)
+        {
+            mainForm.Instince.qAlert();
+            if (!mainForm.Instince.Metrocontainer.Controls.ContainsKey("Alert"))
+            {
+                Alert general = new Alert();
+                general.Dock = DockStyle.Fill;
+                mainForm.Instince.Metrocontainer.Controls.Add(general);
+            }
+            mainForm.Instince.Metrocontainer.Controls["Alert"].BringToFront();
+            mainForm.Instince.Metroback.Visible = true;
         }
     }
-
+    
     
 }

@@ -650,6 +650,7 @@ namespace tt
             {
                 StreamReader sr = new StreamReader(filename);
                 string line;
+                
 
                 while ((line = sr.ReadLine()) != null)
                 {
