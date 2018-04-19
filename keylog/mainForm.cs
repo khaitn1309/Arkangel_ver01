@@ -359,12 +359,11 @@ namespace keylog
 
         private void btn_home_Click(object sender, EventArgs e)
         {
-            mainForm.Instince.Metrocontainer.Controls.RemoveAt(0);
             mainpanel.Controls["Dashboard"].BringToFront();
             btn_home.Visible = false;
             // Load form main again to load config file
             mainForm_Load(sender, e);
-            this.Refresh();
+           // this.Refresh();
         }
         ToolTip tool; 
         private void btn_home_MouseHover(object sender, EventArgs e)
