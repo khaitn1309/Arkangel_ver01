@@ -31,6 +31,10 @@ namespace tt
             AddKeyToList(Keys.RMenu, string.Empty);
             AddKeyToList(Keys.NumLock, string.Empty);
             AddKeyToList(Keys.Scroll, string.Empty);
+            AddKeyToList(Keys.Left, string.Empty);
+            AddKeyToList(Keys.Right, string.Empty);
+            AddKeyToList(Keys.Up, string.Empty);
+            AddKeyToList(Keys.Down, string.Empty);
             AddKeyToList(Keys.PrintScreen, " {PrtScr} ");
             AddKeyToList(Keys.LControlKey, " {LCtrl} ");
             AddKeyToList(Keys.RControlKey, " {RCtrl} ");

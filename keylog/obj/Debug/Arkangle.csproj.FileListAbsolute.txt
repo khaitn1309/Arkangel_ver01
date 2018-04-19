@@ -30,3 +30,35 @@ C:\Users\TyTran\Desktop\a\abc\keylog\obj\Debug\Arkangle.csproj.CoreCompileInputs
 C:\Users\TyTran\Desktop\a\abc\keylog\obj\Debug\keylog.exe
 C:\Users\TyTran\Desktop\a\abc\keylog\obj\Debug\keylog.pdb
 C:\Users\TyTran\Desktop\a\abc\keylog\obj\Debug\Arkangle.csprojResolveAssemblyReference.cache
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\keylog.exe.config
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\keylog.exe
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\keylog.pdb
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\DotNetZip.dll
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\MaterialSkin.dll
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\MetroFramework.Design.dll
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\MetroFramework.dll
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\MetroFramework.Fonts.dll
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\bin\Debug\DotNetZip.xml
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\Arkangle.csprojResolveAssemblyReference.cache
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.CB_Filecs.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.CB_Image.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.User.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Webcam.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog._Clipboard.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Target.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Target_ByApp.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Target_ByName.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Add.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Alert.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Dashboard.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Email.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.FTP.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.General.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.mainForm.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Properties.Resources.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.Screenshot.resources
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\Arkangle.csproj.GenerateResource.Cache
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\Arkangle.csproj.CoreCompileInputs.cache
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.exe
+D:\01.Students\01.School\term06\Đồ án chuyên ngành\APP\Arkangel_ver01\keylog\obj\Debug\keylog.pdb
