@@ -80,6 +80,7 @@ namespace keylog
             using (StreamWriter file = new StreamWriter("general_conf.ini"))
                 foreach (var entry in conf)
                     file.WriteLine("{0},{1}", entry.Key, entry.Value);
+            mainForm.Instince.mainForm_Load(sender, e);
         }
 
         private void General_Load(object sender, EventArgs e)

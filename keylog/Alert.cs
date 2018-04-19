@@ -85,9 +85,9 @@ namespace keylog
             using (StreamWriter file = new StreamWriter("alerts_ListOfKey.ini"))
                 foreach (var entry in alertList)
                     file.WriteLine(entry);
-
+            mainForm.Instince.mainForm_Load(sender, e);
             // Application.Restart();
-            
+
         }
 
         private void Alert_Load(object sender, EventArgs e)

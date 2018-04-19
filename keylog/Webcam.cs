@@ -85,7 +85,8 @@ namespace keylog
             using (StreamWriter file = new StreamWriter("Webcam_config.ini"))
                 foreach (var entry in d)
                     file.WriteLine("{0},{1}", entry.Key, entry.Value);
-
+            //----------load config
+            mainForm.Instince.mainForm_Load(sender, e);
         }
 
         private void bt_test_Click(object sender, EventArgs e)

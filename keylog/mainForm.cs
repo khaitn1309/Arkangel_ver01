@@ -200,7 +200,7 @@ namespace keylog
         //    }));
         //    jobScheduler.Start();
         //}
-        private void mainForm_Load(object sender, EventArgs e)
+        public void mainForm_Load(object sender, EventArgs e)
         {
             btn_home.Visible = false;
             _instance = this;
@@ -398,38 +398,128 @@ namespace keylog
         public void qGeneral()
         {
             bt_qGeneral.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            //bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qClipboard()
         {
             bt_qClipboard.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+           // bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qFTP()
         {
             bt_qFTP.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            //bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qWebcam()
         {
             bt_qWebcam.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            //bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qAlert()
         {
             bt_qAlert.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+           // bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qUser()
         {
             bt_qUser.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            //bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qEmail()
         {
             bt_Email.Normalcolor = Color.Gray;
+            //Colour
+           // bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qScreenshot()
         {
             bt_qScreenshot.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+           // bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
         public void qTarget()
         {
             bt_qTarget.Normalcolor = Color.Gray;
+            //Colour
+            bt_Email.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qAlert.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qUser.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qScreenshot.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qFTP.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qClipboard.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qGeneral.Normalcolor = Color.FromArgb(64, 64, 64);
+           // bt_qTarget.Normalcolor = Color.FromArgb(64, 64, 64);
+            bt_qWebcam.Normalcolor = Color.FromArgb(64, 64, 64);
         }
 
         private void bt_qGeneral_Click(object sender, EventArgs e)

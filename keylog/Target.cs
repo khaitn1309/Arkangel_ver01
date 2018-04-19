@@ -65,6 +65,7 @@ namespace keylog
                 {
                     file.WriteLine(item);
                 }
+            mainForm.Instince.mainForm_Load(sender, e);
         }
 
         private void Target_Load(object sender, EventArgs e)

